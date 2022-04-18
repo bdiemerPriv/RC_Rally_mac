@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3D6C9C1280D4016003293A5 /* RC_Rally_macApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D6C9C0280D4016003293A5 /* RC_Rally_macApp.swift */; };
+		C3D6C9C5280D4018003293A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D6C9C4280D4018003293A5 /* Assets.xcassets */; };
+		C3D6C9C8280D4018003293A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D6C9C7280D4018003293A5 /* Preview Assets.xcassets */; };
+		C3D6C9D5280D41B0003293A5 /* FahrerDaten.json in Resources */ = {isa = PBXBuildFile; fileRef = C3D6C9D4280D41B0003293A5 /* FahrerDaten.json */; };
+		C3D6C9D7280D41CD003293A5 /* FahrerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D6C9D6280D41CD003293A5 /* FahrerModel.swift */; };
+		C3D6C9D9280D41D4003293A5 /* FahrerServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D6C9D8280D41D3003293A5 /* FahrerServices.swift */; };
+		C3D6C9DC280D41EB003293A5 /* FahrerArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D6C9DA280D41EB003293A5 /* FahrerArray.swift */; };
+		C3D6C9DD280D41EB003293A5 /* FahrerDat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D6C9DB280D41EB003293A5 /* FahrerDat.swift */; };
+		C3D6C9E1280D41FB003293A5 /* FahrerDatenEingabe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D6C9DE280D41FB003293A5 /* FahrerDatenEingabe.swift */; };
+		C3D6C9E2280D41FB003293A5 /* FahrerListe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D6C9DF280D41FB003293A5 /* FahrerListe.swift */; };
+		C3D6C9E3280D41FB003293A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D6C9E0280D41FB003293A5 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C3D6C9BD280D4016003293A5 /* RC_Rally_mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RC_Rally_mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D6C9C0280D4016003293A5 /* RC_Rally_macApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RC_Rally_macApp.swift; sourceTree = "<group>"; };
+		C3D6C9C4280D4018003293A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3D6C9C7280D4018003293A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3D6C9C9280D4018003293A5 /* RC_Rally_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RC_Rally_mac.entitlements; sourceTree = "<group>"; };
+		C3D6C9D4280D41B0003293A5 /* FahrerDaten.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FahrerDaten.json; sourceTree = "<group>"; };
+		C3D6C9D6280D41CD003293A5 /* FahrerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FahrerModel.swift; sourceTree = "<group>"; };
+		C3D6C9D8280D41D3003293A5 /* FahrerServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FahrerServices.swift; sourceTree = "<group>"; };
+		C3D6C9DA280D41EB003293A5 /* FahrerArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FahrerArray.swift; sourceTree = "<group>"; };
+		C3D6C9DB280D41EB003293A5 /* FahrerDat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FahrerDat.swift; sourceTree = "<group>"; };
+		C3D6C9DE280D41FB003293A5 /* FahrerDatenEingabe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FahrerDatenEingabe.swift; sourceTree = "<group>"; };
+		C3D6C9DF280D41FB003293A5 /* FahrerListe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FahrerListe.swift; sourceTree = "<group>"; };
+		C3D6C9E0280D41FB003293A5 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3D6C9BA280D4016003293A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3D6C9B4280D4016003293A5 = {
+			isa = PBXGroup;
+			children = (
+				C3D6C9BF280D4016003293A5 /* RC_Rally_mac */,
+				C3D6C9BE280D4016003293A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3D6C9BE280D4016003293A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3D6C9BD280D4016003293A5 /* RC_Rally_mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3D6C9BF280D4016003293A5 /* RC_Rally_mac */ = {
+			isa = PBXGroup;
+			children = (
+				C3D6C9D3280D407E003293A5 /* Data */,
+				C3D6C9D2280D4073003293A5 /* View */,
+				C3D6C9D1280D4069003293A5 /* ViewModels */,
+				C3D6C9D0280D4061003293A5 /* Services */,
+				C3D6C9CF280D405A003293A5 /* Model */,
+				C3D6C9C0280D4016003293A5 /* RC_Rally_macApp.swift */,
+				C3D6C9C4280D4018003293A5 /* Assets.xcassets */,
+				C3D6C9C9280D4018003293A5 /* RC_Rally_mac.entitlements */,
+				C3D6C9C6280D4018003293A5 /* Preview Content */,
+				C3D6C9D4280D41B0003293A5 /* FahrerDaten.json */,
+			);
+			path = RC_Rally_mac;
+			sourceTree = "<group>";
+		};
+		C3D6C9C6280D4018003293A5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C3D6C9C7280D4018003293A5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3D6C9CF280D405A003293A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3D6C9DA280D41EB003293A5 /* FahrerArray.swift */,
+				C3D6C9DB280D41EB003293A5 /* FahrerDat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3D6C9D0280D4061003293A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C3D6C9D8280D41D3003293A5 /* FahrerServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C3D6C9D1280D4069003293A5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C3D6C9D6280D41CD003293A5 /* FahrerModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C3D6C9D2280D4073003293A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3D6C9E0280D41FB003293A5 /* ContentView.swift */,
+				C3D6C9DE280D41FB003293A5 /* FahrerDatenEingabe.swift */,
+				C3D6C9DF280D41FB003293A5 /* FahrerListe.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3D6C9D3280D407E003293A5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3D6C9BC280D4016003293A5 /* RC_Rally_mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D6C9CC280D4018003293A5 /* Build configuration list for PBXNativeTarget "RC_Rally_mac" */;
+			buildPhases = (
+				C3D6C9B9280D4016003293A5 /* Sources */,
+				C3D6C9BA280D4016003293A5 /* Frameworks */,
+				C3D6C9BB280D4016003293A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RC_Rally_mac;
+			productName = RC_Rally_mac;
+			productReference = C3D6C9BD280D4016003293A5 /* RC_Rally_mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3D6C9B5280D4016003293A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					C3D6C9BC280D4016003293A5 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C3D6C9B8280D4016003293A5 /* Build configuration list for PBXProject "RC_Rally_mac" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3D6C9B4280D4016003293A5;
+			productRefGroup = C3D6C9BE280D4016003293A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3D6C9BC280D4016003293A5 /* RC_Rally_mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3D6C9BB280D4016003293A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D6C9C8280D4018003293A5 /* Preview Assets.xcassets in Resources */,
+				C3D6C9D5280D41B0003293A5 /* FahrerDaten.json in Resources */,
+				C3D6C9C5280D4018003293A5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3D6C9B9280D4016003293A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D6C9DC280D41EB003293A5 /* FahrerArray.swift in Sources */,
+				C3D6C9E1280D41FB003293A5 /* FahrerDatenEingabe.swift in Sources */,
+				C3D6C9D7280D41CD003293A5 /* FahrerModel.swift in Sources */,
+				C3D6C9DD280D41EB003293A5 /* FahrerDat.swift in Sources */,
+				C3D6C9E3280D41FB003293A5 /* ContentView.swift in Sources */,
+				C3D6C9E2280D41FB003293A5 /* FahrerListe.swift in Sources */,
+				C3D6C9C1280D4016003293A5 /* RC_Rally_macApp.swift in Sources */,
+				C3D6C9D9280D41D4003293A5 /* FahrerServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C3D6C9CA280D4018003293A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3D6C9CB280D4018003293A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C3D6C9CD280D4018003293A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RC_Rally_mac/RC_Rally_mac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RC_Rally_mac/Preview Content\"";
+				DEVELOPMENT_TEAM = A7KTA969AF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diemer.RC-Rally-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C3D6C9CE280D4018003293A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RC_Rally_mac/RC_Rally_mac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RC_Rally_mac/Preview Content\"";
+				DEVELOPMENT_TEAM = A7KTA969AF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diemer.RC-Rally-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3D6C9B8280D4016003293A5 /* Build configuration list for PBXProject "RC_Rally_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D6C9CA280D4018003293A5 /* Debug */,
+				C3D6C9CB280D4018003293A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D6C9CC280D4018003293A5 /* Build configuration list for PBXNativeTarget "RC_Rally_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D6C9CD280D4018003293A5 /* Debug */,
+				C3D6C9CE280D4018003293A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3D6C9B5280D4016003293A5 /* Project object */;
+}
