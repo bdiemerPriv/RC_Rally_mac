@@ -10,17 +10,50 @@ import Foundation
 
 class FahrerService {
     
+//    func leseFahrer() -> [fahrerTab] {
+//        var FahrerTabRet = [fahrerTab]()
+//
+//        let pathString = Bundle.main.path(forResource: "FahrerDaten", ofType: "json")
+//        // Wenn Datei existiert
+//        if let path = pathString {
+//            // Ermittle URL zum auslesen
+//            let url = URL(fileURLWithPath: path)
+//            // Hole Daten
+//            do{
+//                let data = try Data(contentsOf: url)
+//                // Instanziiere JSON Decoder
+//                let decoder = JSONDecoder()
+//                do {
+//                    let fahrerDaten = try decoder.decode([Fahrer].self, from: data)
+//                    for f in fahrerDaten {
+//                        var newFahrer = fahrerTab(fahrer: f)
+//                        FahrerTabRet.append(newFahrer)
+//                    }
+//                } catch {
+//                    // Decoder
+//                    print("Decoder")
+//                    print(error)
+//                }
+//
+//            } catch {
+//                // Url Fehler
+//                print(error)
+//            }
+//        }
+//
+//        return FahrerTabRet
+//    }
+    
     func leseFahrer() -> [fahrerTab] {
         var FahrerTabRet = [fahrerTab]()
         
-        let pathString = Bundle.main.path(forResource: "FahrerDaten", ofType: "json")
-        // Wenn Datei existiert
-        if let path = pathString {
-            // Ermittle URL zum auslesen
-            let url = URL(fileURLWithPath: path)
-            // Hole Daten
+        do{
+            
+     // Ermittle URL zum auslesen
+        let path = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+                   .appendingPathComponent("FahrerDaten.json")
             do{
-                let data = try Data(contentsOf: url)
+                let data = try Data(contentsOf: path)
                 // Instanziiere JSON Decoder
                 let decoder = JSONDecoder()
                 do {
@@ -39,8 +72,10 @@ class FahrerService {
                 // Url Fehler
                 print(error)
             }
+        } catch {
+            print(error.localizedDescription)
         }
-        
+    
         return FahrerTabRet
     }
     
@@ -60,28 +95,28 @@ class FahrerService {
                                     encoding: .utf8)
             print(jsonString)
             do{
-//                let pathString = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-//                           .appendingPathComponent("FahrerDaten.json")
-//
-//                       let encoder = JSONEncoder()
-//                       try encoder.encode(fahrerT).write(to: pathString)
+                let pathString = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+                           .appendingPathComponent("FahrerDaten.json")
+
+                       let encoder = JSONEncoder()
+                       try encoder.encode(fahrerT).write(to: pathString)
                 
-                let pathString = Bundle.main.path(forResource: "FahrerDaten", ofType: "json")
-                if let path = pathString {
-                    // Ermittle URL zum auslesen
-                    let url = URL(fileURLWithPath: path)
-//                    let url = getDocumentsDirectory()
-                    // Hole Daten
-                    let json = try JSONEncoder().encode(fahrerT)
-                    do {
-                        try json.write(to: url)
-                        let jsonString2 = String(data: json,
-                                                encoding: .utf8)
-                        print(jsonString2)
-                    } catch {
-                        print(error.localizedDescription)
-                    }
-                }
+//                let pathString = Bundle.main.path(forResource: "FahrerDaten", ofType: "json")
+//                if let path = pathString {
+//                    // Ermittle URL zum auslesen
+//                    let url = URL(fileURLWithPath: path)
+////                    let url = getDocumentsDirectory()
+//                    // Hole Daten
+//                    let json = try JSONEncoder().encode(fahrerT)
+//                    do {
+//                        try json.write(to: url)
+//                        let jsonString2 = String(data: json,
+//                                                encoding: .utf8)
+//                        print(jsonString2)
+//                    } catch {
+//                        print(error.localizedDescription)
+//                    }
+//                }
             } catch {
                 print(error.localizedDescription)
             }
