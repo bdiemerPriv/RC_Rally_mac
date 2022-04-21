@@ -25,7 +25,7 @@ class FahrerService {
                 do {
                     let fahrerDaten = try decoder.decode([Fahrer].self, from: data)
                     for f in fahrerDaten {
-                        var newFahrer = fahrerTab(fahrer: f)
+                        let newFahrer = fahrerTab(fahrer: f)
                         FahrerTabRet.append(newFahrer)
                     }
                 } catch {

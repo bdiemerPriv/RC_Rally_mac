@@ -20,7 +20,7 @@ class FahrerModel: ObservableObject {
     
     func addFahrer(fahrerNummer: String,nachName:String, vorName:String){
         let fahrerNew = Fahrer(fahrerNummer:fahrerNummer,nachName:nachName,vorName:vorName)
-        var newFahrer = fahrerTab(fahrer: fahrerNew)
+        let newFahrer = fahrerTab(fahrer: fahrerNew)
         fahrer.append(newFahrer)
     }
     

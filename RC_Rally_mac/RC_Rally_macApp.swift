@@ -12,7 +12,7 @@ struct RC_Rally_macApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-            FahrerListe().environmentObject(FahrerModel())
+//            FahrerListe().environmentObject(FahrerModel())
         }
     }
 }

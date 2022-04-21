@@ -24,7 +24,7 @@ struct FahrerListe: View {
                             Text(item.fahrer.getName())
                         }
                     })
-                }
+//                }.aspectRatio(contentMode: .fill)
                 .navigationTitle("Fahrer Liste")
             }.toolbar {
                 ToolbarItemGroup() {
@@ -37,9 +37,10 @@ struct FahrerListe: View {
                     }
                     .accessibilityLabel("Sichern Fahrer")
                 }
-            }
+            }.aspectRatio(contentMode: .fill)
         }
-    }
+        }
+}
 }
 
 struct FahrerListe_Previews: PreviewProvider {

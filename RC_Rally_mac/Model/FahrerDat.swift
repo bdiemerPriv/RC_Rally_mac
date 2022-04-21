@@ -24,7 +24,7 @@ class Fahrer: Codable {
     
     func getName() -> String {
         var name: String =  ""
-        name = self.nachName + ", " + self.vorName
+        name = self.fahrerNummer + ":" + self.nachName + ", " + self.vorName
         return name
     }
 }
