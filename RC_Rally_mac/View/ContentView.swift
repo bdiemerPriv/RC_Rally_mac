@@ -13,8 +13,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
 
-        FahrerListe().environmentObject(FahrerModel())
-//        WPListe().environmentObject(WertePruefungModel())
+//        FahrerListe().environmentObject(FahrerModel())
+        WPListe().environmentObject(WertePruefungModel())
     }
 
 }

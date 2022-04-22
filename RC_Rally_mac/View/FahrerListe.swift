@@ -15,8 +15,8 @@ struct FahrerListe: View {
     var body: some View {
         NavigationView {
             
-            ScrollView{
-                
+//            ScrollView{
+            List{
                 ForEach(fahrerList.fahrer) { item in
                     NavigationLink(destination: FahrerDatenEingabe(fahrer: item.fahrer),
                                    label: {

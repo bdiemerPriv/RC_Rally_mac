@@ -14,9 +14,8 @@ struct WPListe: View {
     
     var body: some View {
         NavigationView {
-            
-            ScrollView{
-                
+//            ScrollView{
+            List {
                 ForEach(wpList.wertePruefungen) { item in
                     NavigationLink(destination: PruefungDatenEingabe(wertePruefung: item.wertePruefung),
                                    label: {
@@ -37,10 +36,10 @@ struct WPListe: View {
                     }
                     .accessibilityLabel("Sichern Werte Prüfungen")
                 }
-            }.aspectRatio(contentMode: .fill)
-        }
-        }
-}
+            }
+            }
+        }.navigationTitle("Werte Prüfungen Liste")
+   }
 }
 
 struct WPListe_Previews: PreviewProvider {
