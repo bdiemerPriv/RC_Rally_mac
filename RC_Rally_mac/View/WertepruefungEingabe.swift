@@ -16,14 +16,11 @@ struct PruefungDatenEingabe: View {
         VStack(alignment: .center) {
             Form {
                 HStack(alignment: .center) {
-                    Label("WP Nummer :",systemImage: "bolt.fill").labelStyle(.titleOnly)
                     TextField(text: $wertePruefung.wpNummer, prompt: Text("")) {
                         Text("WP Nummer:")
                     }
                 }
                 HStack(alignment: .center) {
-                    Label("Name :",systemImage: "bolt.fill").labelStyle(.titleOnly)
-                    
                     TextField(text: $wertePruefung.wpName, prompt: Text("WP Name")) {
                         Text("WP Name:")
                     }

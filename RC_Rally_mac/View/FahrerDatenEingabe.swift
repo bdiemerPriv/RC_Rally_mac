@@ -16,20 +16,19 @@ struct FahrerDatenEingabe: View {
         VStack(alignment: .center) {
             Form {
                 HStack(alignment: .center) {
-                    Label("Fahrer Nummer :",systemImage: "bolt.fill").labelStyle(.titleOnly)
+  //                  Label("Fahrer Nummer :",systemImage: "bolt.fill").labelStyle(.titleOnly)
                     TextField(text: $fahrer.fahrerNummer, prompt: Text("")) {
                         Text("Fahrer Nummer:")
                     }
                 }
                 HStack(alignment: .center) {
-                    Label("Nachname :",systemImage: "bolt.fill").labelStyle(.titleOnly)
-                    
+//                    Label("Nachname :",systemImage: "bolt.fill").labelStyle(.titleOnly)
                     TextField(text: $fahrer.nachName, prompt: Text("Nachname")) {
                         Text("Nachname:")
                     }
                 }
                 HStack(alignment: .center) {
-                    Label("Vorname :",systemImage: "bolt.fill").labelStyle(.titleOnly)
+//                    Label("Vorname :",systemImage: "bolt.fill").labelStyle(.titleOnly)
                     TextField(text: $fahrer.vorName, prompt: Text("Vorname")) {
                         Text("Vorname:")
                     }
